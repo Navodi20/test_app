@@ -16,7 +16,7 @@ const Navbar = () => {
           <Link href="/Services">Services</Link>
         </li>
         <li className={styles.navItem}>
-          <Link href="/menue">Menue</Link>
+          <Link href="/Menu">Menu</Link>
         </li>
         <li className={styles.navItem}>
           <Link href="/contact">Contact</Link>
