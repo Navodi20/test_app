@@ -1,27 +1,72 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Global Styles */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+p{
+  font-weight: bold;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+h1, h2 {
+  color: black;
+}
+h3{
+  color:white;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Topic Section */
+.topic {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+
+.bold-text {
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: black;
+}
+
+/* About Section */
+.about-section {
+  background-color:black;
+  color: white;
+  padding: 20px 150px;
+  
+}
+
+.about-container {
+  display: Grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center; }
+
+
+.about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    text-align: center;
   }
 }
