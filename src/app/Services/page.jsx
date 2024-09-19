@@ -41,6 +41,16 @@ export default function Services() {
             </p>
           </div>
         </div>
+        <section>
+        <div>
+        <hr className={styles.sectionDivider} />
+            <img className={styles.sameSizeImage1} src="/images/catering.jpg" alt="Overview Image"/>
+            <img className={styles.sameSizeImage1} src="/images/dining.jpg" alt="Overview Image" />
+            <img className={styles.sameSizeImage1} src="/images/event.jpg" alt="Overview Image" />
+            <img className={styles.sameSizeImage1} src="/images/class.jpg" alt="Overview Image" />
+          </div>
+        </section>
+        
       </div>
     </>
   );
