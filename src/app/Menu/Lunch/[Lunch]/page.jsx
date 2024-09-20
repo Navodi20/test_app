@@ -4,10 +4,10 @@ import styles from './page.module.css'; // Import the CSS file
 
 const LunchMenu = () => {
   const Items = [
-    { id: 1, name: 'Chicken Friedrice', img: '/images/chicken.jpg', slug: 'Omlette' },
-    { id: 3, name: 'Egg Friedrice', img: '/images/omlet.jpg', slug: 'Spaghetti' },
-    { id: 4, name: 'Rice and Curry', img: '/images/rice.jpg', slug: 'Hoppers' },
-    { id: 5, name: 'Thai rice', img: '/images/thai.jpg', slug: 'Hoppers' },
+    { id: 1, name: 'Chicken Friedrice', img: '/images/chicken.jpg', slug: 'Chicken Friedrice' },
+    { id: 3, name: 'Egg Friedrice', img: '/images/omlet.jpg', slug: 'Egg Friedrice' },
+    { id: 4, name: 'Rice and Curry', img: '/images/rice.jpg', slug: 'Rice and Curry' },
+    { id: 5, name: 'Thai rice', img: '/images/thai.jpg', slug: 'Thai rice' },
   ];
 
   return (
@@ -25,7 +25,7 @@ const LunchMenu = () => {
       <div className={styles.menuGrid}>
         {Items.map(Lunch => (
           <div key={Lunch.id} className={styles.menuItem}>
-            <Link href={`/menu/lunch/${Lunch.slug}`}>
+            <Link href={`/Menu/Lunch/${Lunch.slug}`}>
               <Image src={Lunch.img} alt={Lunch.name} width={200} height={150} />
               <h3 className={styles.menuTitle}>{Lunch.name}</h3>
             </Link>

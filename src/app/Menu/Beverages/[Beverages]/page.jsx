@@ -4,11 +4,11 @@ import styles from './page.module.css'; // Import the CSS file
 
 const BeveragesMenu = () => {
   const Items = [
-    { id: 1, name: 'Banana Smoothie', img: '/images/banana.jpg', slug: 'Omlette' },
-    { id: 2, name: 'Faluda', img: '/images/faluda.jpg', slug: 'Noodles' },
-    { id: 3, name: 'Chocolate Milkshakes', img: '/images/milkshake.jpg', slug: 'Spaghetti' },
-    { id: 4, name: 'Mojito', img: '/images/mojito.jpg', slug: 'Hoppers' },
-    { id: 5, name: 'Orange Juice', img: '/images/orange.jpg', slug: 'Hoppers' },
+    { id: 1, name: 'Banana Smoothie', img: '/images/banana.jpg', slug: 'Banana Smoothie' },
+    { id: 2, name: 'Faluda', img: '/images/faluda.jpg', slug: 'Faluda' },
+    { id: 3, name: 'Chocolate Milkshakes', img: '/images/milkshake.jpg', slug: 'Chocolate Milkshakes' },
+    { id: 4, name: 'Mojito', img: '/images/mojito.jpg', slug: 'Mojito' },
+    { id: 5, name: 'Orange Juice', img: '/images/orange.jpg', slug: 'Orange Juice' },
   ];
 
   return (

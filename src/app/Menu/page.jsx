@@ -7,29 +7,26 @@ const MenuPage = () => {
   const sections = [
     {
       name: 'Breakfast',
+      slug: 'Breakfast',
       img: '/images/breakfast.jpg',
-      slug: 'breakfast',
     },
     {
       name: 'Lunch',
-      img: '/images/lunch.jpg',
-      slug: 'lunch',
-    },
+      slug: 'Lunch',
+      img: '/images/lunch.jpg',},
+    
     {
       name: 'Dinner',
-      img: '/images/dinner.jpg',
-      slug: 'dinner',
-    },
+      slug: 'Dinner',
+      img: '/images/dinner.jpg',},
     {
       name: 'Beverages',
-      img: '/images/beverages.jpg',
-      slug: 'beverages',
-    },
+      slug: 'Beverages',
+      img: '/images/beverages.jpg',},
     {
       name: 'Desserts',
-      img: '/images/dessert.jpg',
-      slug: 'desserts',
-    },
+      slug: 'Desserts',
+      img: '/images/dessert.jpg',},
   ];
 
   return (
@@ -38,7 +35,7 @@ const MenuPage = () => {
       <div className={styles.sections}>
         {sections.map((section, index) => (
           <div key={index} className={styles.section}>
-            <Link href={`/menu/${section.slug}`}>
+            <Link href={`/Menu/${section.slug}`}>
               <div className={styles.imageContainer}>
                 <Image
                   src={section.img}

@@ -4,11 +4,11 @@ import styles from './page.module.css'; // Import the CSS file
 
 const DessertMenu = () => {
   const breakfastItems = [
-    { id: 1, name: 'cake', img: '/images/cake.jpg', slug: 'Omlette' },
-    { id: 2, name: 'caramel', img: '/images/caramel.jpg', slug: 'Noodles' },
-    { id: 3, name: 'ice cream', img: '/images/icecream.jpg', slug: 'Spaghetti' },
-    { id: 4, name: 'pudding', img: '/images/pudding.jpg', slug: 'Hoppers' },
-    { id: 4, name: 'watalappan', img: '/images/watalappan.jpg', slug: 'Hoppers' },
+    { id: 1, name: 'cake', img: '/images/cake.jpg', slug: 'cake' },
+    { id: 2, name: 'caramel', img: '/images/caramel.jpg', slug: 'caramel' },
+    { id: 3, name: 'ice cream', img: '/images/icecream.jpg', slug: 'ice cream' },
+    { id: 4, name: 'pudding', img: '/images/pudding.jpg', slug: 'pudding' },
+    { id: 5, name: 'watalappan', img: '/images/watalappan.jpg', slug: 'watalappan' },
   ];
 
   return (
@@ -26,7 +26,7 @@ const DessertMenu = () => {
       <div className={styles.menuGrid}>
         {breakfastItems.map(Dessert => (
           <div key={Dessert.id} className={styles.menuItem}>
-            <Link href={`/menu/breakfast/${Dessert.slug}`}>
+            <Link href={`/Menu/Desserts/${Dessert.slug}`}>
               <Image src={Dessert.img} alt={Dessert.name} width={200} height={150} />
               <h3 className={styles.menuTitle}>{Dessert.name}</h3>
             </Link>

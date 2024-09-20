@@ -4,11 +4,11 @@ import styles from './page.module.css'; // Import the CSS file
 
 const DinnerMenu = () => {
   const breakfastItems = [
-    { id: 1, name: 'Fried Rice', img: '/images/Friedrice.jpg', slug: 'Omlette' },
-    { id: 2, name: 'Hoppers', img: '/images/hoppers.jpg', slug: 'Noodles' },
-    { id: 3, name: 'Noodles', img: '/images/ndls.jpg', slug: 'Spaghetti' },
-    { id: 4, name: 'String Hoppers', img: '/images/Stringhoppers.jpg', slug: 'Hoppers' },
-    { id: 4, name: 'Spaghetti', img: '/images/spaghetti.jpg', slug: 'Hoppers' },
+    { id: 1, name: 'Fried Rice', img: '/images/Friedrice.jpg', slug: 'Fried Rice' },
+    { id: 2, name: 'Hoppers', img: '/images/hoppers.jpg', slug: 'Hoppers' },
+    { id: 3, name: 'Noodles', img: '/images/ndls.jpg', slug: 'Noodles' },
+    { id: 4, name: 'String Hoppers', img: '/images/Stringhoppers.jpg', slug: 'String Hoppers' },
+    { id: 4, name: 'Spaghetti', img: '/images/spaghetti.jpg', slug: 'Spaghetti' },
   ];
 
   return (
@@ -29,7 +29,7 @@ const DinnerMenu = () => {
       <div className={styles.menuGrid}>
         {breakfastItems.map(Dinner => (
           <div key={Dinner.id} className={styles.menuItem}>
-            <Link href={`/menu/dinner/${Dinner.slug}`}>
+            <Link href={`/Menu/Dinner/${Dinner.slug}`}>
               <Image src={Dinner.img} alt={Dinner.name} width={200} height={150} />
               <h3 className={styles.menuTitle}>{Dinner.name}</h3>
             </Link>

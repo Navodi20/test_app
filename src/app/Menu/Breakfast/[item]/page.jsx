@@ -25,7 +25,7 @@ const BreakfastMenu = () => {
       <div className={styles.menuGrid}>
         {breakfastItems.map(item => (
           <div key={item.id} className={styles.menuItem}>
-            <Link href={`/menu/breakfast/${item.slug}`}>
+            <Link href={`/Menu/Breakfast/${item.slug}`}>
               <Image src={item.img} alt={item.name} width={200} height={150} />
               <h3 className={styles.menuTitle}>{item.name}</h3>
             </Link>
