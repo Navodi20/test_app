@@ -19,7 +19,6 @@ export default function Home() {
           Step into our Restaurant, where passion for culinary excellence is at the heart of everything we do...
         </p>
       </div>
-
       {/* About Section */}
       <section className="about-section" id="about">
         <div className="about-container">

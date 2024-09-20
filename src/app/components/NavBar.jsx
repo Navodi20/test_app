@@ -19,7 +19,7 @@ const Navbar = () => {
           <Link href="/Menu">Menu</Link>
         </li>
         <li className={styles.navItem}>
-          <Link href="/contact">Contact</Link>
+          <Link href="/ContactUs">Contact</Link>
         </li>
       </ul>
     </nav>
