@@ -4,10 +4,10 @@ import styles from './page.module.css'; // Import the CSS file
 
 const BreakfastMenu = () => {
   const breakfastItems = [
-    { id: 1, name: 'Omelette', img: '/images/omlet.jpg', slug: 'Omlette' },
-    { id: 2, name: 'Noodles', img: '/images/noodles.jpg', slug: 'Noodles' },
-    { id: 3, name: 'Spaghetti', img: '/images/spaghetti.jpg', slug: 'Spaghetti' },
-    { id: 4, name: 'hoppers', img: '/images/hoppers.jpg', slug: 'Hoppers' },
+    { id: 1, name: 'Omelette', slug: 'Omlette', img: '/images/omlet.jpg' },
+    { id: 2, name: 'Noodles', slug: 'noodles' , img: '/images/noodles.jpg', slug: 'noodles' },
+    { id: 3, name: 'Spaghetti', slug: 'spaghetti', img: '/images/spaghetti.jpg', slug: 'spaghetti' },
+    { id: 4, name: 'hoppers', slug: 'hoppers' , img: '/images/hoppers.jpg', slug: 'hoppers' },
   ];
 
   return (
@@ -23,11 +23,11 @@ const BreakfastMenu = () => {
      </p>
      <hr className={styles.sectionDivider} /> 
       <div className={styles.menuGrid}>
-        {breakfastItems.map(item => (
-          <div key={item.id} className={styles.menuItem}>
-            <Link href={`/Menu/Breakfast/${item.slug}`}>
-              <Image src={item.img} alt={item.name} width={200} height={150} />
-              <h3 className={styles.menuTitle}>{item.name}</h3>
+        {breakfastItems.map(Breakfast=> (
+          <div key={Breakfast.item} className={styles.menuItem}>
+            <Link href={`/Menu/Breakfast/${Breakfast.slug}`}>
+              <Image src={Breakfast.img} alt={Breakfast.name} width={200} height={150} />
+              <h3 className={styles.menuTitle}>{Breakfast.name}</h3>
             </Link>
           </div>
         ))}

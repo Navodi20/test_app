@@ -1,28 +1,29 @@
-/* Navbar.module.css */
+
 .navbar {
-  background-color: #333; /* Background color of the navbar */
-  padding: 1rem; /* Adds padding around the navbar */
-  text-align: center; /* Centers the list horizontally */
+  background-color: #333; 
+  padding: 1rem; 
+  text-align: center; 
+
 }
 
 .navList {
-  list-style-type: none; /* Removes bullet points from the list */
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
 }
 
 .navItem {
-  display: inline-block; /* Display list items in a row */
-  margin-right: 30px; /* Adds spacing between items */
+  display: inline-block; 
+  margin-right: 30px; 
 }
 
 .navItem a {
-  color: white; /* Link color */
-  text-decoration: none; /* Removes underline from links */
-  padding: 0.5rem 1rem; /* Adds padding inside the links */
-  transition: color 0.3s ease; /* Smooth hover transition */
+  color: white; 
+  text-decoration: none; 
+  padding: 0.5rem 1rem; 
+  transition: color 0.3s ease; 
 }
 
 .navItem a:hover {
-  color: #ddd; /* Changes color on hover */
+  color: #ddd; 
 }

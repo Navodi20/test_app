@@ -1,42 +1,44 @@
-import Link from 'next/link';
+'use client'
 import Image from 'next/image';
-import styles from './page.module.css'; // Import the CSS file
+import Link from 'next/link';
+import styles from './page.module.css'; // Import the updated CSS file
 
-const BeveragesMenu = () => {
-  const Items = [
-    { id: 1, name: 'Banana Smoothie', img: '/images/banana.jpg', slug: 'Banana Smoothie' },
-    { id: 2, name: 'Faluda', img: '/images/faluda.jpg', slug: 'Faluda' },
-    { id: 3, name: 'Chocolate Milkshakes', img: '/images/milkshake.jpg', slug: 'Chocolate Milkshakes' },
-    { id: 4, name: 'Mojito', img: '/images/mojito.jpg', slug: 'Mojito' },
-    { id: 5, name: 'Orange Juice', img: '/images/orange.jpg', slug: 'Orange Juice' },
-  ];
+const Items = [
+  { id: 1, name: 'Banana Smoothie', img: '/images/banana.jpg', slug: 'banana-smoothie', description: 'A creamy blend of fresh bananas and milk.' },
+  { id: 2, name: 'Faluda', img: '/images/faluda.jpg', slug: 'faluda', description: 'A refreshing and sweet drink made with vermicelli, ice cream, and rose syrup.' },
+  { id: 3, name: 'Chocolate Milkshakes', img: '/images/milkshake.jpg', slug: 'chocolate-milkshakes', description: 'Rich and creamy chocolate milkshake to satisfy your sweet tooth.' },
+  { id: 4, name: 'Mojito', img: '/images/mojito.jpg', slug: 'mojito', description: 'A classic mojito with lime, mint, and soda water.' },
+  { id: 5, name: 'Orange Juice', img: '/images/orange.jpg', slug: 'orange-juice', description: 'Freshly squeezed orange juice, perfect for a sunny day.' },
+];
+
+const BeverageOrderPage = ({ params }) => {
+  const { slug } = params;
+
+  // Find the beverage based on the slug
+  const Beverages = Items.find((Beverages) => Items.slug === slug);
+
+  if (!Beverages) {
+    return <p>Beverage not found!</p>;
+  }
 
   return (
     <div className={styles.container}>
-      <h1>Beverages</h1>
-      <p>Quench your thirst and elevate your dining experience with our thoughtfully curated selection of beverages. Whether you’re in the mood for a refreshing drink to complement your meal or a cozy beverage to savor on its own, our menu has something for everyone.
+      <h1 className={styles.title}>{Beverages.name}</h1>
+      <p>{Beverages.description}</p>
 
-      Start with our handcrafted specialty coffees and teas, each brewed to perfection to awaken your senses. Choose from rich espressos, velvety lattes, or soothing herbal teas that offer a moment of calm amidst the hustle and bustle of the day.
+      <h2>Place Your Order</h2>
+      <form className={styles.orderForm}>
+        <label>
+          Quantity:
+          <input type="number" className={styles.numberInput} name="quantity" min="1" defaultValue="1" />
+        </label>
+        <button type="submit" className={styles.orderButton}>Order Now</button>
+      </form>
 
-      For those seeking something more invigorating, explore our range of fresh juices and smoothies, made from the finest seasonal fruits and vegetables. Each sip is a burst of natural goodness that nourishes and refreshes, perfect for a midday pick-me-up or a light afternoon snack.
-
-      And let’s not forget our selection of cocktails and mocktails, expertly mixed to create delightful flavor combinations that are as beautiful as they are delicious. From classic concoctions to innovative creations, each drink is crafted to enhance your dining experience and make any occasion feel special.
-
-      Join us as we celebrate the art of beverage-making, providing the perfect pairings to complement your meal or a refreshing respite to enjoy with friends. Cheers to good company and great flavors!
-     </p>
-     <hr className={styles.sectionDivider} /> 
-      <div className={styles.menuGrid}>
-        {Items.map(Beverages => (
-          <div key={Beverages.id} className={styles.menuItem}>
-            <Link href={`/menu/Beverages/${Beverages.slug}`}>
-              <Image src={Beverages.img} alt={Beverages.name} width={200} height={150} />
-              <h3 className={styles.menuTitle}>{Beverages.name}</h3>
-            </Link>
-          </div>
-        ))}
-      </div>
+      <Link href="/Menu/Beverages" className={styles.backLink}>Back to Beverages Menu
+      </Link>
     </div>
   );
 };
 
-export default BeveragesMenu;
+export default BeverageOrderPage;

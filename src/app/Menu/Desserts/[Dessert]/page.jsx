@@ -1,40 +1,43 @@
+'use client'
 import Link from 'next/link';
-import Image from 'next/image';
-import styles from './page.module.css'; // Import the CSS file
+import styles from './page.module.css'; // Import the updated CSS file
 
-const DessertMenu = () => {
-  const breakfastItems = [
-    { id: 1, name: 'cake', img: '/images/cake.jpg', slug: 'cake' },
-    { id: 2, name: 'caramel', img: '/images/caramel.jpg', slug: 'caramel' },
-    { id: 3, name: 'ice cream', img: '/images/icecream.jpg', slug: 'ice cream' },
-    { id: 4, name: 'pudding', img: '/images/pudding.jpg', slug: 'pudding' },
-    { id: 5, name: 'watalappan', img: '/images/watalappan.jpg', slug: 'watalappan' },
-  ];
+const dessertItems = [
+  { id: 1, name: 'Cake', slug: 'cake', description: 'A rich and moist cake layered with chocolate ganache.' },
+  { id: 2, name: 'Caramel', slug: 'caramel', description: 'A creamy dessert topped with sweet caramel sauce.' },
+  { id: 3, name: 'Ice Cream', slug: 'ice-cream', description: 'Hand-churned ice cream in various flavors.' },
+  { id: 4, name: 'Pudding', slug: 'pudding', description: 'A smooth and silky vanilla pudding topped with whipped cream.' },
+  { id: 5, name: 'Watalappan', slug: 'watalappan', description: 'A traditional Sri Lankan coconut custard with jaggery and cardamom.' },
+];
+
+const DessertOrderPage = ({ params }) => {
+  const { slug } = params;
+
+  const Dessert = dessertItems.find((item) => dessertItems.slug === slug);
+
+  if (!Dessert) {
+    return <p>Dessert item not found!</p>;
+  }
 
   return (
     <div className={styles.container}>
-      <h1>Desserts</h1>
-      <p>Prepare to embark on a sweet journey with our exquisite dessert selection, designed to delight your taste buds and satisfy your cravings. Each dessert is a masterpiece, meticulously crafted using the finest ingredients to ensure an unforgettable experience.
+      <h1 className={styles.title}>{Dessert.name}</h1>
+      <p>{Dessert.description}</p>
 
-      From rich and velvety chocolate creations to refreshing fruit-based treats, our menu offers a diverse array of options that cater to every palate. Indulge in classic favorites like our decadent chocolate cake, perfectly layered with silky ganache, or savor the light and airy goodness of our signature tiramisu, infused with the rich flavors of espresso and mascarpone.
+      <h2>Place Your Order</h2>
+      <form className={styles.orderForm}>
+        <label>
+          Quantity:
+          <input type="number" className={styles.numberInput} name="quantity" min="1" defaultValue="1" />
+        </label>
+        <button type="submit" className={styles.orderButton}>Order Now</button>
+      </form>
 
-      For those who prefer a fruity finish, our seasonal fruit tart showcases a buttery crust filled with creamy custard and topped with a vibrant medley of fresh fruits, bringing a burst of flavor in every bite. And don’t miss our artisanal ice creams, hand-churned and available in a variety of unique flavors that are sure to refresh and invigorate.
-
-      Whether you're celebrating a special occasion or simply treating yourself, our dessert offerings promise to provide a sweet conclusion to your dining experience. Join us in indulging in these delightful creations, where every bite is a celebration of flavor and craftsmanship!</p>
-      <hr className={styles.sectionDivider} />
-
-      <div className={styles.menuGrid}>
-        {breakfastItems.map(Dessert => (
-          <div key={Dessert.id} className={styles.menuItem}>
-            <Link href={`/Menu/Desserts/${Dessert.slug}`}>
-              <Image src={Dessert.img} alt={Dessert.name} width={200} height={150} />
-              <h3 className={styles.menuTitle}>{Dessert.name}</h3>
-            </Link>
-          </div>
-        ))}
-      </div>
+      <Link href="/Menu/Desserts" className={styles.backLink}>
+        Back to Desserts Menu
+      </Link>
     </div>
   );
 };
 
-export default DessertMenu;
+export default DessertOrderPage;

@@ -1,39 +1,43 @@
+'use client'
 import Link from 'next/link';
-import Image from 'next/image';
-import styles from './page.module.css'; // Import the CSS file
+import styles from './page.module.css'; // Import the updated CSS file
 
-const BreakfastMenu = () => {
-  const breakfastItems = [
-    { id: 1, name: 'Omelette', img: '/images/omlet.jpg', slug: 'Omlette' },
-    { id: 2, name: 'Noodles', img: '/images/noodles.jpg', slug: 'Noodles' },
-    { id: 3, name: 'Spaghetti', img: '/images/spaghetti.jpg', slug: 'Spaghetti' },
-    { id: 4, name: 'hoppers', img: '/images/hoppers.jpg', slug: 'Hoppers' },
-  ];
+const breakfastItems = [
+  { id: 1, name: 'Omelette', slug: 'Omlette', description: 'A fluffy omelette filled with vegetables and cheese, served with toast.' },
+  { id: 2, name: 'Noodles', slug: 'Noodles', description: 'Savory stir-fried noodles with fresh veggies and eggs.' },
+  { id: 3, name: 'Spaghetti', slug: 'Spaghetti', description: 'Classic spaghetti served with tomato sauce and meatballs.' },
+  { id: 4, name: 'Hoppers', slug: 'Hoppers', description: 'A traditional dish made with rice flour and coconut milk, served with spicy sambal.' },
+];
 
-  return (
-    <div className={styles.container}>
-      <h1>Breakfast Menu</h1>
-      <p>Wake up to a delicious start with our carefully curated breakfast selection, crafted to energize your day and delight your senses. Our breakfast menu features a range of wholesome and flavorful dishes, made with the freshest ingredients to ensure a nourishing experience.
-
-      Indulge in our hearty classics, like fluffy pancakes drizzled with pure maple syrup, or savor the satisfying crunch of our perfectly toasted avocado toast, topped with ripe tomatoes and a sprinkle of feta. For a protein-packed option, try our signature omelette, filled with a medley of seasonal vegetables and served with a side of golden hash browns.
-
-      If you’re in the mood for something lighter, our yogurt parfaits layered with house-made granola and fresh berries offer a refreshing balance of flavors. And don’t forget to explore our selection of artisanal pastries, baked daily to provide that warm, buttery goodness that pairs perfectly with your morning coffee.
-
-      Whether you’re looking for a quick bite to fuel your morning or a leisurely brunch with friends, our breakfast offerings promise to set a positive tone for the day ahead. Join us as we celebrate the most important meal of the day with delicious creations that cater to every palate!
-     </p>
-     <hr className={styles.sectionDivider} /> 
-      <div className={styles.menuGrid}>
-        {breakfastItems.map(item => (
-          <div key={item.id} className={styles.menuItem}>
-            <Link href={`/Menu/Breakfast/${item.slug}`}>
-              <Image src={item.img} alt={item.name} width={200} height={150} />
-              <h3 className={styles.menuTitle}>{item.name}</h3>
-            </Link>
-          </div>
-        ))}
+const BreakfastOrderPage = ({ params }) => {
+  const { slug } = params;
+  
+    // Find the beverage based on the slug
+    const item = breakfastItems.find((item) => breakfastItems.slug === slug);
+  
+    if (!item) {
+      return <p>Food not found!</p>;
+    }
+  
+    return (
+      <div className={styles.container}>
+        <h1 className={styles.title}>{item.name}</h1>
+        <p>{item.description}</p>
+  
+        <h2>Place Your Order</h2>
+        <form className={styles.orderForm}>
+          <label>
+            Quantity:
+            <input type="number" className={styles.numberInput} name="quantity" min="1" defaultValue="1" />
+          </label>
+          <button type="submit" className={styles.orderButton}>Order Now</button>
+        </form>
+  
+        <Link href="/Menu/Breakfast" className={styles.backLink}>Back to Breakfast Menu
+        </Link>
       </div>
-    </div>
-  );
-};
+    );
+  };
 
-export default BreakfastMenu;
+
+export default BreakfastOrderPage;

@@ -4,10 +4,10 @@ import styles from './page.module.css'; // Import the CSS file
 
 const LunchMenu = () => {
   const Items = [
-    { id: 1, name: 'Chicken Friedrice', img: '/images/chicken.jpg', slug: 'Chicken Friedrice' },
-    { id: 3, name: 'Egg Friedrice', img: '/images/omlet.jpg', slug: 'Egg Friedrice' },
-    { id: 4, name: 'Rice and Curry', img: '/images/rice.jpg', slug: 'Rice and Curry' },
-    { id: 5, name: 'Thai rice', img: '/images/thai.jpg', slug: 'Thai rice' },
+    { id: 1, name: 'Chicken Friedrice', img: '/images/chicken.jpg', slug: 'chicken-friedrice' },
+    { id: 3, name: 'Egg Friedrice', img: '/images/omlet.jpg', slug: 'egg-friedrice' },
+    { id: 4, name: 'Rice and Curry', img: '/images/rice.jpg', slug: 'rice-and-curry' },
+    { id: 5, name: 'Thai rice', img: '/images/thai.jpg', slug: 'thai-rice' },
   ];
 
   return (
