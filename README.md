@@ -39,64 +39,18 @@ This project is a dynamic restaurant website that enables customers to browse an
 
 ## Folder Structure
 
-public/
-│   └── favicon.ico                  # Website favicon
-
 src/
 ├── app/
-│   ├── [...path]/                   # Handles dynamic routing for menu sections
-│   │   ├── page.jsx                 # Component for dynamic pages
-│   │   └── page.module.css          # CSS for dynamic pages
+│   ├── [...path]/
 │   ├── About/
-│   │   ├── page.jsx                 # About page component
-│   │   └── page.module.css          # CSS for About page
 │   ├── components/
-│   │   ├── footer.jsx               # Footer component
-│   │   ├── footer.module.css        # CSS for footer
-│   │   ├── NavBar.jsx               # Navigation bar component
-│   │   └── NavBar.module.css        # CSS for navigation bar
 │   ├── ContactUs/
-│   │   ├── page.jsx                 # Contact us page component
-│   │   └── page.module.css          # CSS for Contact us page
-│   ├── fonts/                       # Folder for custom fonts
+│   ├── fonts/
 │   ├── Menu/
-│   │   ├── Beverages/
-│   │   │   ├── page.jsx             # Static Beverages menu component
-│   │   │   ├── page.module.css      # Static CSS for Beverages menu
-│   │   │   ├── [Beverages]/
-│   │   │   │   ├── page.jsx         # Beverages menu component (Dynamic)
-│   │   │   │   └── page.module.css  # CSS for Beverages menu (Dynamic)
-│   │   ├── Breakfast/
-│   │   │   ├── page.jsx             # Static Breakfast menu component
-│   │   │   ├── page.module.css      # Static CSS for Breakfast menu
-│   │   │   ├── [Breakfast]/
-│   │   │   │   ├── page.jsx         # Breakfast menu component (Dynamic)
-│   │   │   │   └── page.module.css  # CSS for Breakfast menu (Dynamic)
-│   │   ├── Desserts/
-│   │   │   ├── page.jsx             # Static Desserts menu component
-│   │   │   ├── page.module.css      # Static CSS for Desserts menu
-│   │   │   ├── [Desserts]/
-│   │   │   │   ├── page.jsx         # Desserts menu component (Dynamic)
-│   │   │   │   └── page.module.css  # CSS for Desserts menu (Dynamic)
-│   │   ├── Dinner/
-│   │   │   ├── page.jsx             # Static Dinner menu component
-│   │   │   ├── page.module.css      # Static CSS for Dinner menu
-│   │   │   ├── [Dinner]/
-│   │   │   │   ├── page.jsx         # Dinner menu component (Dynamic)
-│   │   │   │   └── page.module.css  # CSS for Dinner menu (Dynamic)
-│   │   ├── Lunch/
-│   │   │   ├── page.jsx             # Static Lunch menu component
-│   │   │   ├── page.module.css      # Static CSS for Lunch menu
-│   │   │   ├── [Lunch]/
-│   │   │   │   ├── page.jsx         # Lunch menu component (Dynamic)
-│   │   │   │   └── page.module.css  # CSS for Lunch menu (Dynamic)
 │   ├── Services/
-│   │   ├── page.jsx                 # Services page component
-│   │   └── page.module.css          # CSS for Services page
-│   ├── globals.css                   # Global CSS styles
-│   ├── layout.tsx                    # Layout component for the app. Inside this there is footer and header
-│   └── page.tsx                      # Global page component used across the app
-└── favicon.ico                       # Website favicon
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
 
 
 
