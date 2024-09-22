@@ -21,6 +21,86 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+# Restaurant Website
+
+## Project Overview
+This project is a dynamic restaurant website that enables customers to browse and place orders for various meals such as breakfast, lunch, dinner, beverages, and desserts. The website utilizes dynamic routing for a smooth user experience and includes error handling to redirect users to an error page when they visit non-existent routes.
+
+## Features
+- Dynamic Routing: Seamless navigation between different sections of the menu.
+- Order System: Users can select food items, specify quantities, and place orders.
+- Error Handling: Redirects users to an error page if they attempt to access a non-existent page.
+- Responsive Design: Optimized for viewing on desktops, tablets, and mobile devices.
+
+## Technologies Used
+- HTML: For structuring the web pages.
+- CSS: For styling and layout management.
+- JavaScript: For dynamic features such as routing and order handling.
+
+## Folder Structure
+
+public/
+│   └── favicon.ico                  # Website favicon
+
+src/
+├── app/
+│   ├── [...path]/                   # Handles dynamic routing for menu sections
+│   │   ├── page.jsx                 # Component for dynamic pages
+│   │   └── page.module.css          # CSS for dynamic pages
+│   ├── About/
+│   │   ├── page.jsx                 # About page component
+│   │   └── page.module.css          # CSS for About page
+│   ├── components/
+│   │   ├── footer.jsx               # Footer component
+│   │   ├── footer.module.css        # CSS for footer
+│   │   ├── NavBar.jsx               # Navigation bar component
+│   │   └── NavBar.module.css        # CSS for navigation bar
+│   ├── ContactUs/
+│   │   ├── page.jsx                 # Contact us page component
+│   │   └── page.module.css          # CSS for Contact us page
+│   ├── fonts/                       # Folder for custom fonts
+│   ├── Menu/
+│   │   ├── Beverages/
+│   │   │   ├── page.jsx             # Static Beverages menu component
+│   │   │   ├── page.module.css      # Static CSS for Beverages menu
+│   │   │   ├── [Beverages]/
+│   │   │   │   ├── page.jsx         # Beverages menu component (Dynamic)
+│   │   │   │   └── page.module.css  # CSS for Beverages menu (Dynamic)
+│   │   ├── Breakfast/
+│   │   │   ├── page.jsx             # Static Breakfast menu component
+│   │   │   ├── page.module.css      # Static CSS for Breakfast menu
+│   │   │   ├── [Breakfast]/
+│   │   │   │   ├── page.jsx         # Breakfast menu component (Dynamic)
+│   │   │   │   └── page.module.css  # CSS for Breakfast menu (Dynamic)
+│   │   ├── Desserts/
+│   │   │   ├── page.jsx             # Static Desserts menu component
+│   │   │   ├── page.module.css      # Static CSS for Desserts menu
+│   │   │   ├── [Desserts]/
+│   │   │   │   ├── page.jsx         # Desserts menu component (Dynamic)
+│   │   │   │   └── page.module.css  # CSS for Desserts menu (Dynamic)
+│   │   ├── Dinner/
+│   │   │   ├── page.jsx             # Static Dinner menu component
+│   │   │   ├── page.module.css      # Static CSS for Dinner menu
+│   │   │   ├── [Dinner]/
+│   │   │   │   ├── page.jsx         # Dinner menu component (Dynamic)
+│   │   │   │   └── page.module.css  # CSS for Dinner menu (Dynamic)
+│   │   ├── Lunch/
+│   │   │   ├── page.jsx             # Static Lunch menu component
+│   │   │   ├── page.module.css      # Static CSS for Lunch menu
+│   │   │   ├── [Lunch]/
+│   │   │   │   ├── page.jsx         # Lunch menu component (Dynamic)
+│   │   │   │   └── page.module.css  # CSS for Lunch menu (Dynamic)
+│   ├── Services/
+│   │   ├── page.jsx                 # Services page component
+│   │   └── page.module.css          # CSS for Services page
+│   ├── globals.css                   # Global CSS styles
+│   ├── layout.tsx                    # Layout component for the app. Inside this there is footer and header
+│   └── page.tsx                      # Global page component used across the app
+└── favicon.ico                       # Website favicon
+
+
+
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
