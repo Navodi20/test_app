@@ -71,6 +71,11 @@ Make sure you have Node.js and npm installed on your machine, and refer to the p
 
 * Place Your Order:Once the user has made their selections, they can click on the "Place Order" button to submit their order. This initiates the ordering process, ensuring that the restaurant receives the user's meal preferences.
 
+## Prerequisites
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (version x.x.x or later)
+- npm (comes with Node.js
+
 ## Contact
 
 For inquiries, please reach out to:
