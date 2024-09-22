@@ -63,7 +63,7 @@
   color:black;
 }
 
-/* Add some spacing for mobile */
+
 @media (max-width: 600px) {
   .container {
     padding: 15px;

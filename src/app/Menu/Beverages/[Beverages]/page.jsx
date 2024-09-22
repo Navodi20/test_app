@@ -1,7 +1,7 @@
 'use client'
-import Image from 'next/image';
+
 import Link from 'next/link';
-import styles from './page.module.css'; // Import the updated CSS file
+import styles from './page.module.css'; 
 
 const Items = [
   { id: 1, name: 'Banana Smoothie', img: '/images/banana.jpg', slug: 'banana-smoothie', description: 'A creamy blend of fresh bananas and milk.' },
@@ -14,7 +14,7 @@ const Items = [
 const BeverageOrderPage = ({ params }) => {
   const { slug } = params;
 
-  // Find the beverage based on the slug
+  
   const Beverages = Items.find((Beverages) => Items.slug === slug);
 
   if (!Beverages) {

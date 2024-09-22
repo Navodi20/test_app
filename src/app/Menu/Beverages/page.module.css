@@ -33,9 +33,9 @@
 }
 .sectionDivider {
   border: none;
-  border-top: 2px solid #ccc; /* Adjust thickness and color */
-  margin: 40px 0; /* Space around the divider */
-  width: 80%; /* Optional: Adjust width */
+  border-top: 2px solid #ccc; 
+  margin: 40px 0; 
+  width: 80%; 
   margin-left: auto;
   margin-right: auto;
 }

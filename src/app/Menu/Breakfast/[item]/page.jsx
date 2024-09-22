@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link';
-import styles from './page.module.css'; // Import the updated CSS file
+import styles from './page.module.css'; 
 
 const breakfastItems = [
   { id: 1, name: 'Omelette', slug: 'Omlette', description: 'A fluffy omelette filled with vegetables and cheese, served with toast.' },
@@ -12,7 +12,7 @@ const breakfastItems = [
 const BreakfastOrderPage = ({ params }) => {
   const { slug } = params;
   
-    // Find the beverage based on the slug
+    
     const item = breakfastItems.find((item) => breakfastItems.slug === slug);
   
     if (!item) {

@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link';
-import styles from './page.module.css'; // Import the updated CSS file
+import styles from './page.module.css'; 
 
 const dessertItems = [
   { id: 1, name: 'Cake', slug: 'cake', description: 'A rich and moist cake layered with chocolate ganache.' },

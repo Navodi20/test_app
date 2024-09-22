@@ -3,7 +3,7 @@ import styles from '../../app/About/page.module.css';
 
 function Page() {
   return (
-    <div className={styles.aboutContainer}> {/* Use CSS Module here */}
+    <div className={styles.aboutContainer}> 
       <section className={styles.aboutIntro}>
         <h1><center>About Our Restaurant</center></h1>
         <p>Our story began in a quaint kitchen, where a shared passion for exceptional cuisine first took root. What started as a humble endeavor quickly blossomed into a journey of culinary discovery. From the first bite, it was clear that our dedication to quality and innovation would set us apart. Driven by a love for bringing people together through unforgettable meals, we embarked on a mission to create a dining experience that combines tradition with modern flair. Our menu reflects a careful selection of ingredients and flavors from around the world, prepared with artistry and precision.</p>

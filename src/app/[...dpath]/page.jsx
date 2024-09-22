@@ -1,9 +1,24 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
 
-function page() {
+function Page() {
   return (
-    <div>catch all routes</div>
-  )
+    <div style={styles.container}>
+      <p>Page unavailable</p>
+      <Link href="/Menu">Go to Menu</Link>
+    </div>
+  );
 }
 
-export default page
+const styles = {
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh', 
+    textAlign: 'center', 
+  },
+};
+
+export default Page;

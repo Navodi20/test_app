@@ -13,7 +13,6 @@ const ContactUs = () => {
           <label htmlFor="message">Message: </label>
           <textarea id="message" name="message" required> </textarea>
         </div>
-        {/* Use the class from CSS module for button styling */}
         <button type="submit" className={styles.button}>Send Message</button>
       </form>
 

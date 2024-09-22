@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from './page.module.css'; // Import the CSS file
+import styles from './page.module.css';
 
 const BeveragesMenu = () => {
   const Items = [
