@@ -55,12 +55,12 @@ src/
 ## Installation
 To install the project:
 
-* Clone the repository using *git clone https://github.com/FHSS-USJ/assignment-01-Navodi20.git*.
-* Navigate to the project directory with cd my-app.
-* Install the necessary dependencies by running npm install.
+* Clone the repository using **git clone https://github.com/FHSS-USJ/assignment-01-Navodi20.git**.
+* Navigate to the project directory with **cd my-app**.
+* Install the necessary dependencies by running **npm install**.
 * Start the development server with npm start.
-* Open your browser to visit http://localhost:3000 to view the application.
-* 
+* Open your browser to visit **http://localhost:3000** to view the application.
+  
 Make sure you have Node.js and npm installed on your machine, and refer to the project documentation for any additional configurations or dependencies.
 
 
