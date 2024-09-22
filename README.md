@@ -17,10 +17,6 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
 # Restaurant Website
 
 ## Project Overview
@@ -62,6 +58,19 @@ To install the project:
 * Open your browser to visit **http://localhost:3000** to view the application.
   
 Make sure you have Node.js and npm installed on your machine, and refer to the project documentation for any additional configurations or dependencies.
+
+## Usage
+
+**Explore the Services**: Users can view the services provided by the restaurant, including details about the offerings and the contact information for customer service. This helps users understand what the restaurant provides and how to get in touch for inquiries.
+**Contact Details**:The restaurant's contact information is readily available for any inquiries. Users can reach out directly through provided channels for questions or special requests.
+**Browse the Menu**: Navigate to the menu section to select from various meal categories: breakfast, lunch, dinner, and desserts. Each category leads to a dedicated page containing a list of available dishes.
+**Select a Meal**: After choosing a category, users can view all the food items listed on that page. They can select a meal and specify the desired quantity.
+**Place Your Order**:Once the user has made their selections, they can click on the "Place Order" button to submit their order. This initiates the ordering process, ensuring that the restaurant receives the user's meal preferences.
+
+## Contact
+
+For inquiries, please reach out to:
+Email: **navodidhananjana2002@gmail.com**
 
 
 
