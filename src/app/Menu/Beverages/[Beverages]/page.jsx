@@ -15,7 +15,8 @@ const BeverageOrderPage = ({ params }) => {
   const { slug } = params;
 
   
-  const Beverages = Items.find((Beverages) => Items.slug === slug);
+  const itemB = Items.filter((obj)=>obj.slug===params.Beverages)
+    const Beverages =itemB[0]
 
   if (!Beverages) {
     return <p>Beverage not found!</p>;
@@ -23,7 +24,7 @@ const BeverageOrderPage = ({ params }) => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>{Beverages.name}</h1>
+      <h1 className={styles.title}>{(Beverages.name)}</h1>
       <p>{Beverages.description}</p>
 
       <h2>Place Your Order</h2>

@@ -13,7 +13,8 @@ const lunchItems = [
 const LunchItemPage = ({ params }) => {
   const { slug } = params;
 
-  const Lunch = lunchItems.find((item) => lunchItems.slug === slug);
+  const itemB = lunchItems.filter((obj)=>obj.slug===params.Lunch)
+    const Lunch =itemB[0]
 
   if (!Lunch) {
     return <p>Lunch item not found!</p>;

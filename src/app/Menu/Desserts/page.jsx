@@ -6,7 +6,7 @@ const DessertMenu = () => {
   const breakfastItems = [
     { id: 1, name: 'cake', img: '/images/cake.jpg', slug: 'cake' },
     { id: 2, name: 'caramel', img: '/images/caramel.jpg', slug: 'caramel' },
-    { id: 3, name: 'ice cream', img: '/images/icecream.jpg', slug: 'ice cream' },
+    { id: 3, name: 'ice cream', img: '/images/icecream.jpg', slug: 'ice-cream' },
     { id: 4, name: 'pudding', img: '/images/pudding.jpg', slug: 'pudding' },
     { id: 5, name: 'watalappan', img: '/images/watalappan.jpg', slug: 'watalappan' },
   ];

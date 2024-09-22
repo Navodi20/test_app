@@ -4,11 +4,11 @@ import styles from './page.module.css';
 
 const DinnerMenu = () => {
   const breakfastItems = [
-    { id: 1, name: 'Fried Rice', img: '/images/Friedrice.jpg', slug: 'Fried Rice' },
-    { id: 2, name: 'Hoppers', img: '/images/hoppers.jpg', slug: 'Hoppers' },
-    { id: 3, name: 'Noodles', img: '/images/ndls.jpg', slug: 'Noodles' },
-    { id: 4, name: 'String Hoppers', img: '/images/Stringhoppers.jpg', slug: 'String Hoppers' },
-    { id: 4, name: 'Spaghetti', img: '/images/spaghetti.jpg', slug: 'Spaghetti' },
+    { id: 1, name: 'Fried Rice', img: '/images/Friedrice.jpg', slug: 'fried-rice' },
+    { id: 2, name: 'Hoppers', img: '/images/hoppers.jpg', slug: 'hoppers' },
+    { id: 3, name: 'Noodles', img: '/images/ndls.jpg', slug: 'noodles' },
+    { id: 4, name: 'String Hoppers', img: '/images/Stringhoppers.jpg', slug: 'string-hoppers' },
+    { id: 4, name: 'Spaghetti', img: '/images/spaghetti.jpg', slug: 'spaghetti' },
   ];
 
   return (

@@ -13,7 +13,8 @@ const dessertItems = [
 const DessertOrderPage = ({ params }) => {
   const { slug } = params;
 
-  const Dessert = dessertItems.find((item) => dessertItems.slug === slug);
+  const itemB = dessertItems.filter((obj)=>obj.slug===params.Dessert)
+    const Dessert =itemB[0]
 
   if (!Dessert) {
     return <p>Dessert item not found!</p>;

@@ -4,15 +4,15 @@ import styles from './page.module.css';
 
 const BreakfastMenu = () => {
   const breakfastItems = [
-    { id: 1, name: 'Omelette', slug: 'Omlette', img: '/images/omlet.jpg' },
-    { id: 2, name: 'Noodles', slug: 'noodles' , img: '/images/noodles.jpg', slug: 'noodles' },
-    { id: 3, name: 'Spaghetti', slug: 'spaghetti', img: '/images/spaghetti.jpg', slug: 'spaghetti' },
-    { id: 4, name: 'hoppers', slug: 'hoppers' , img: '/images/hoppers.jpg', slug: 'hoppers' },
+    { id: 1, name: 'Omelette', slug: 'omlette', img: '/images/omlet.jpg' },
+    { id: 2, name: 'Noodles', slug: 'noodles' , img: '/images/noodles.jpg'},
+    { id: 3, name: 'Spaghetti', slug: 'spaghetti', img: '/images/spaghetti.jpg'},
+    { id: 4, name: 'hoppers', slug: 'hoppers' , img: '/images/hoppers.jpg' },
   ];
 
   return (
     <div className={styles.container}>
-      <h1>Breakfast Menu</h1>
+      <h1>Breakfast </h1>
       <p>Wake up to a delicious start with our carefully curated breakfast selection, crafted to energize your day and delight your senses. Our breakfast menu features a range of wholesome and flavorful dishes, made with the freshest ingredients to ensure a nourishing experience.
 
       Indulge in our hearty classics, like fluffy pancakes drizzled with pure maple syrup, or savor the satisfying crunch of our perfectly toasted avocado toast, topped with ripe tomatoes and a sprinkle of feta. For a protein-packed option, try our signature omelette, filled with a medley of seasonal vegetables and served with a side of golden hash browns.
