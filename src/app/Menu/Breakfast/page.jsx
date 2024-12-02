@@ -17,9 +17,9 @@ const BreakfastMenu = () => {
 
       Indulge in our hearty classics, like fluffy pancakes drizzled with pure maple syrup, or savor the satisfying crunch of our perfectly toasted avocado toast, topped with ripe tomatoes and a sprinkle of feta. For a protein-packed option, try our signature omelette, filled with a medley of seasonal vegetables and served with a side of golden hash browns.
 
-      If you’re in the mood for something lighter, our yogurt parfaits layered with house-made granola and fresh berries offer a refreshing balance of flavors. And don’t forget to explore our selection of artisanal pastries, baked daily to provide that warm, buttery goodness that pairs perfectly with your morning coffee.
+      If you&apos; re in the mood for something lighter, our yogurt parfaits layered with house-made granola and fresh berries offer a refreshing balance of flavors. And don&apos; t forget to explore our selection of artisanal pastries, baked daily to provide that warm, buttery goodness that pairs perfectly with your morning coffee.
 
-      Whether you’re looking for a quick bite to fuel your morning or a leisurely brunch with friends, our breakfast offerings promise to set a positive tone for the day ahead. Join us as we celebrate the most important meal of the day with delicious creations that cater to every palate!
+      Whether you&apos;re looking for a quick bite to fuel your morning or a leisurely brunch with friends, our breakfast offerings promise to set a positive tone for the day ahead. Join us as we celebrate the most important meal of the day with delicious creations that cater to every palate!
      </p>
      <hr className={styles.sectionDivider} /> 
       <div className={styles.menuGrid}>

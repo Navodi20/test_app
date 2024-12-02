@@ -18,9 +18,9 @@ const DessertMenu = () => {
 
       From rich and velvety chocolate creations to refreshing fruit-based treats, our menu offers a diverse array of options that cater to every palate. Indulge in classic favorites like our decadent chocolate cake, perfectly layered with silky ganache, or savor the light and airy goodness of our signature tiramisu, infused with the rich flavors of espresso and mascarpone.
 
-      For those who prefer a fruity finish, our seasonal fruit tart showcases a buttery crust filled with creamy custard and topped with a vibrant medley of fresh fruits, bringing a burst of flavor in every bite. And don’t miss our artisanal ice creams, hand-churned and available in a variety of unique flavors that are sure to refresh and invigorate.
+      For those who prefer a fruity finish, our seasonal fruit tart showcases a buttery crust filled with creamy custard and topped with a vibrant medley of fresh fruits, bringing a burst of flavor in every bite. And don&apos;t miss our artisanal ice creams, hand-churned and available in a variety of unique flavors that are sure to refresh and invigorate.
 
-      Whether you're celebrating a special occasion or simply treating yourself, our dessert offerings promise to provide a sweet conclusion to your dining experience. Join us in indulging in these delightful creations, where every bite is a celebration of flavor and craftsmanship!</p>
+      Whether you&apos;re celebrating a special occasion or simply treating yourself, our dessert offerings promise to provide a sweet conclusion to your dining experience. Join us in indulging in these delightful creations, where every bite is a celebration of flavor and craftsmanship!</p>
       <hr className={styles.sectionDivider} />
 
       <div className={styles.menuGrid}>

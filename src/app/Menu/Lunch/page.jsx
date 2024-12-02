@@ -19,7 +19,7 @@ const LunchMenu = () => {
 
       As you explore the main courses, indulge in our signature dishes, which showcase the best of culinary creativity. From savory pasta dishes that evoke the essence of Italian cuisine to flavorful stir-fries that bring a taste of the East, every bite promises to transport you to different culinary landscapes.
 
-      Whether you're dining solo or sharing a meal with colleagues and friends, our lunch offerings are perfect for a quick bite or a leisurely afternoon meal. Join us and let our inviting atmosphere and delicious food turn your lunch break into a cherished moment of the day!</p>
+      Whether you&apos; re dining solo or sharing a meal with colleagues and friends, our lunch offerings are perfect for a quick bite or a leisurely afternoon meal. Join us and let our inviting atmosphere and delicious food turn your lunch break into a cherished moment of the day!</p>
       <hr className={styles.sectionDivider} />
 
       <div className={styles.menuGrid}>

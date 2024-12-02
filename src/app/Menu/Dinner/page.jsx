@@ -22,7 +22,7 @@ const DinnerMenu = () => {
 
       To complete your evening, we invite you to explore our exquisite dessert offerings, where sweet indulgence awaits.
 
-      Whether you're celebrating a special occasion or enjoying a casual dinner with loved ones, our dinner menu promises a memorable dining experience that nourishes both the body and the soul. Join us as we create unforgettable moments around the table, filled with good food and great company.
+      Whether you&apos;re celebrating a special occasion or enjoying a casual dinner with loved ones, our dinner menu promises a memorable dining experience that nourishes both the body and the soul. Join us as we create unforgettable moments around the table, filled with good food and great company.
       </p>
       <hr className={styles.sectionDivider} />
 
