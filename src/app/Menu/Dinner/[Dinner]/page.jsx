@@ -11,7 +11,6 @@ const dinnerItems = [
 ];
 
 const DinnerOrderPage = ({ params }) => {
-  const { slug } = params;
 
   const itemB = dinnerItems.filter((obj)=>obj.slug===params.Dinner)
     const Dinner =itemB[0]

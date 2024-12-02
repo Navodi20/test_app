@@ -1,6 +1,5 @@
 'use client'
 import Link from 'next/link';
-import Image from 'next/image';
 import styles from './page.module.css';
 
 const lunchItems = [
@@ -11,7 +10,6 @@ const lunchItems = [
 ];
 
 const LunchItemPage = ({ params }) => {
-  const { slug } = params;
 
   const itemB = lunchItems.filter((obj)=>obj.slug===params.Lunch)
     const Lunch =itemB[0]

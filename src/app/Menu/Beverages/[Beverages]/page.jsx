@@ -12,7 +12,6 @@ const Items = [
 ];
 
 const BeverageOrderPage = ({ params }) => {
-  const { slug } = params;
 
   
   const itemB = Items.filter((obj)=>obj.slug===params.Beverages)

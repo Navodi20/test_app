@@ -10,7 +10,6 @@ const breakfastItems = [
 ];
 
 const BreakfastOrderPage = ({ params }) => {
-  const { slug } = params;
   
     
     const itemB = breakfastItems.filter((obj)=>obj.slug===params.item)
